@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Collaborations</title>
+  
+  <link rel="stylesheet" type="text/css" href="/css/styless.css">
+  <script src="https://kit.fontawesome.com/9ddc981496.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html"><div class="logo"> <img class="logo_img" src="pics\Helping-Hands-logo-textless-1.png" alt="BellsToBellies"/> </div></a>
+    
+
+    <li class="nav_icon"><i class="fa-solid fa-bars"></i></li>
+
+    <div class="list">
+        <a href="index.html"><li>About Us</li></a>
+        <a href="join.html"><li>Join Us</li></a>
+        <a href="collab.html"><li>Our Collaboration</li></a>
+        <a href="contact.html"><li>Contact Us</li></a>
+    </div>
+  </nav>
+ <div class="banquet_container">
+  <div class="cards">
+    <img class="banquet" src="pics\crown_plaza.png" alt="Crown Plaza"/>
+    <div class="desc">
+      <div class="name"> Crown Plaza</div>
+      <div class="address">Twin District Centre, Sector 10, Rohini, New Delhi, Delhi 110085</div>
+        <div class="phone">011 4488 4488</div>
+    </div>
+  </div>
+  <div class="cards">
+    <img class="banquet" src="pics\piccadily-hotel-new-delhi.jpg" alt="Piccadilly"/>
+    <div class="desc">
+      <div class="name">Piccadilly</div>
+      <div class="address">Janakpuri West, Janakpuri District Center, Janakpuri, New Delhi, Delhi 110058</div>
+        <div class="phone">011 4123 4123</div>
+    </div>
+  </div>
+  <div class="cards">
+    <img class="banquet" src="pics\radisson_blue_paschim_vihar.jpg" alt="Radisson Blu"/>
+    <div class="desc">
+      <div class="name">Radisson Blu</div>
+      <div class="address">Janakpuri West, Janakpuri District Center, Janakpuri, New Delhi, Delhi 110058</div>
+        <div class="phone">011 4639 9999</div>
+    </div>
+  </div>
+  <div class="cards">
+    <img class="banquet" src="pics\rajwada_palace.png" alt="Rajwada Palace"/>
+    <div class="desc">
+      <div class="name">Rajwada Palace</div>
+      <div class="address">B 33, Industrial Area, GT Karnal Road Industrial Area, Ashok Vihar, Delhi, 110033</div>
+        <div class="phone">082879 59526</div>
+    </div>
+  </div>
+  <div class="cards">
+    <img class="banquet" src="pics\The Lalit.jpg" alt="The Lalit"/>
+    <div class="desc">
+      <div class="name">The Lalit</div>
+      <div class="address"> Fire Brigade Lane, Barakhamba, New Delhi, Delhi 110001 </div>
+        <div class="phone">011 4444 7777</div>
+    </div>
+  </div>
+ </div> 
+
+
+  <script>
+    const toggle = document.getElementsByClassName("nav_icon")[0];
+    const list_items = document.getElementsByClassName("list")[0];
+
+    toggle.addEventListener('click', () =>{
+      list_items.classList.toggle('active');
+    })
+  </script>
+
+</body>
+</html>

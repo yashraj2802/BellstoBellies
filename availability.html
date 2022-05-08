@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Availabilty of food</title>
+  <link rel="stylesheet" type="text/css" href="/css/styless.css">
+  <script src="https://kit.fontawesome.com/9ddc981496.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html"><div class="logo"> <img class="logo_img" src="pics\Helping-Hands-logo-textless-1.png" alt="BellsToBellies"/> </div></a>
+    
+
+    <li class="nav_icon"><i class="fa-solid fa-bars"></i></li>
+
+    <div class="list">
+        <a href="index.html"><li>About Us</li></a>
+        <a href="join.html"><li>Join Us</li></a>
+        <a href="collab.html"><li>Our Collaboration</li></a>
+        <a href="contact.html"><li>Contact Us</li></a>
+    </div>
+  </nav>
+  
+  <div class="box">
+    <div class="heading">Availabilty of food</div>
+
+    <form action="/availability.html" method="post" id="sign_up" class="form_container">
+      
+      <input         class="form_box"      id="email"   aria-describedby="Enter Email" type="email"         name="email"     class="form-control"      placeholder="Email"        required        >         </input>
+  
+      <input      class="form_box"       id="query"   aria-describedby="Enter password"  type="password"         name="password"     class="form-control"      placeholder="Enter password"        required        >   </input>
+
+      <input class="form_box" id="date" aria-describedby="Enter Date" type="date" name="date" class="form_control" placeholder="YYYY-MM-DD" required></input>
+
+      <input class="form_box" id="food" aria-describedby="Enter App. food" type="food" name="food" class="form_control" placeholder="Enter app. food" required></input>
+      
+      
+  
+      <div class="form-group">
+        <button type="submit" class="submit_button">    Submit  </button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const toggle = document.getElementsByClassName("nav_icon")[0];
+    const list_items = document.getElementsByClassName("list")[0];
+
+    toggle.addEventListener('click', () =>{
+      list_items.classList.toggle('active');
+    })
+  </script>
+
+</body>
+</html>

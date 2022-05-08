@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotels lists</title>
+  <link rel="stylesheet" type="text/css" href="/css/stylesss.css">
+  <script src="https://kit.fontawesome.com/9ddc981496.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <nav class="navbar">
+    <a href="index.html"><div class="logo"> <img class="logo_img" src="pics\Helping-Hands-logo-textless-1.png" alt="BellsToBellies"/> </div></a>
+    
+
+    <li class="nav_icon"><i class="fa-solid fa-bars"></i></li>
+
+    <div class="list">
+      <a href="index.html"><li>About Us</li></a>
+      <a href="join.html"><li>Join Us</li></a>
+      <a href="collab.html"><li>Our Collaboration</li></a>
+      <a href="contact.html"><li>Contact Us</li></a>
+    </div>
+  </nav>
+  <div class="table_food">
+    <table class="available_food">
+      <tr>
+        <th>Name</th>
+        <th>Date of availability of food</th>
+        <th>Time of availability of food</th>
+        <th>Approximate food wastage(in kg)</th>
+      </tr>
+      <tr>
+        <td>Piccadilly</td>
+        <td>15/7/22</td>
+        <td>16.00</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>The Lalit</td>
+        <td>16/7/22</td>
+        <td>6.00</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <td>Rajwada Palace</td>
+        <td>16/8/22</td>
+        <td>14.00</td>
+        <td>5</td>
+      </tr>
+    </table>
+  </div>
+
+
+
+  <script>
+    const toggle = document.getElementsByClassName("nav_icon")[0];
+    const list_items = document.getElementsByClassName("list")[0];
+
+    toggle.addEventListener('click', () =>{
+      list_items.classList.toggle('active');
+    })
+  </script>
+
+</body>
+</html>
